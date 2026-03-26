@@ -7,4 +7,4 @@ function curry(a){
 
 console.log(curry(5)(6))
 
-console.log(curry(5)(6))
+console.log(curry(5,6))
