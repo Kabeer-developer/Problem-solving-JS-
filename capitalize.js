@@ -1,4 +1,4 @@
-
-const string = "hello";
-const capital = string[0].toUpperCase();
-console.log(capital);
+//Capitalize first letter of a string 
+let string = "hello"
+let result = string[0].toUppercase;
+console.log(result)
