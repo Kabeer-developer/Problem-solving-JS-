@@ -1,8 +1,9 @@
 function wait(){
-    return new Promise((resolve,reject)=>{
-        setTimeout(()=>{
-            resolve("Hello Kabeer"},2000);
-    }
+    return new Promise((resolve,reject)=> {
+        setTimeout(() => {
+            resolve("hello kabeer");
+        }, 2000);
+    })
 }
 
 async function run(){
