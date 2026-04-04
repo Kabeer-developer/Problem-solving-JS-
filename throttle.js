@@ -2,17 +2,19 @@
 function throttle(fn,limit){
     let canRun = true;
     return function(){
-        if(!canRun) return;
+        if(!canRun) return
         fn();
-        canRun = false;
+        canRun=false;
 
         setTimeout(() => {
-            canRun=true;
-        }, limit);
+        canRun=true;
+    }, limit);
     }
 }
 
-const sayHello = ()=> console.log("Hello");
+const sayhello = ()=> {
+    console.log("Hello");
+}
 
-const throttleHello = throttle(sayHello,1000);
-setInterval(throttleHello,2000);
+const throttleRun = throttle(sayhello,1000);
+setInterval(throttleRun,3000);
